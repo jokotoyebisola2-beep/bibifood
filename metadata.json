@@ -1,0 +1,6 @@
+{
+  "name": "Bibi Food",
+  "description": "A premium, single-brand online food ordering and delivery platform.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  /* Official Brand Colors */
+  --color-brand-chili: #C62828;
+  --color-brand-gold: #F4B400;
+  --color-brand-cream: #FFF8F0;
+  --color-brand-charcoal: #222222;
+  --color-brand-secondary: #666666;
+  --color-brand-success: #2E7D32;
+  --color-brand-warning: #FB8C00;
+  --color-brand-error: #D32F2F;
+
+  /* Backward Compatibility Theme Mapping */
+  --color-brand-olive: #222222;      /* Headings & dark accents map to Charcoal */
+  --color-brand-saffron: #F4B400;    /* Rating / Gold highlights map to Warm Gold */
+  --color-brand-basil: #2E7D32;      /* Success maps to Success Green */
+  --color-brand-alabaster: #FFF8F0;  /* Backgrounds map to Warm Cream */
+}
+
+/* Custom global focus states & utility animations */
+@layer base {
+  :focus-visible {
+    outline: 2px solid var(--color-brand-saffron);
+    outline-offset: 2px;
+  }
+}
